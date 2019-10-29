@@ -1,0 +1,38 @@
+<object-stream>
+<org.drools.core.audit.WorkingMemoryLog>
+  <version>6.1</version>
+  <events>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>1</factId>
+      <objectToString>org.drools.shihu.learn.rules.lhs.Customer@5c448433</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>2</factId>
+      <objectToString>org.drools.shihu.learn.rules.lhs.Customer@42b6d0cc</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>比较操作符-matches [2]</activationId>
+      <rule>比较操作符-matches</rule>
+      <declarations>$customer=org.drools.shihu.learn.rules.lhs.Customer@42b6d0cc; $c=ush_helo</declarations>
+      <factHandleIds>2</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>比较操作符-matches [2]</activationId>
+      <rule>比较操作符-matches</rule>
+      <declarations>$customer=org.drools.shihu.learn.rules.lhs.Customer@42b6d0cc; $c=ush_helo</declarations>
+      <factHandleIds>2</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>比较操作符-matches [2]</activationId>
+      <rule>比较操作符-matches</rule>
+      <declarations>$customer=org.drools.shihu.learn.rules.lhs.Customer@42b6d0cc; $c=ush_helo</declarations>
+      <factHandleIds>2</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+  </events>
+</org.drools.core.audit.WorkingMemoryLog>
+</object-stream>

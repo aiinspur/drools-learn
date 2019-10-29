@@ -1,0 +1,105 @@
+//created on: 2019-10-24
+package org.drools.shihu.learn.rules.lhs
+
+//list any import classes here.
+import org.drools.shihu.learn.rules.lhs.Customer;
+import org.drools.shihu.learn.rules.lhs.Account;
+import java.util.ArrayList;
+
+
+//declare any global variables here
+
+
+
+rule "比较操作符-matches"
+	when
+		$customer: Customer($c: city matches 'ush.*');
+	then 
+		System.out.println('比较操作符-matches test ok.'+$c );
+end
+
+/*
+rule "比较操作符-memberof"
+	when
+		$customer: Customer();
+		Account(this memberOf $customer.getAccounts() );
+	then 
+		System.out.println('比较操作符-memberOf test ok.' );
+end
+
+
+
+
+rule "笔记操作符-contains"
+	when
+		$account: Account($name_:name == 'yanyi');
+		$customer: Customer(name == 'shihu' && accounts contains $account);
+	then 
+		System.out.println('笔记操作符-contains test ok.' + $name_);
+end
+		
+
+rule "accumulate element"
+	
+	when
+		$total : Number( intValue > 300 ) from accumulate( Account($num : num),sum($num) )
+	then
+		System.out.println('accumulate element test ok.');
+
+end
+
+
+
+rule "collect element"
+	
+	when
+		$customer : Customer()
+		$accounts : ArrayList(size >= 2) from collect( Account( status == 'Y') );
+	then
+		System.out.println('collect element test ok.');
+
+end
+
+
+rule "from element"
+	
+	when
+		$customer : Customer();
+		Account(name == 'a1') from $customer.accounts;
+	then
+		System.out.println('from element test ok.');
+
+end
+
+
+rule "not element"
+	
+	when
+		not Customer();	
+	then
+		System.out.println('not customer element.');
+
+end
+
+rule "exists element"
+	
+	when
+		exists Customer();	
+	then
+		System.out.println('exists element.');
+
+end
+*/
+
+/*
+rule "and/or element"
+
+    when
+    	$customer : Customer(city == 'bj') or
+    	$account : Account(name == 'shihu')
+    then
+        //actions
+        System.out.println( 'and/or element test success.' );
+
+end
+*/
