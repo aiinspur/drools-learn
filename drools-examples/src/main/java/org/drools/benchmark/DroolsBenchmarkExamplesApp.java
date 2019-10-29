@@ -23,6 +23,7 @@ import javax.swing.*;
 import org.drools.benchmark.waltz.WaltzBenchmark;
 import org.drools.benchmark.waltzdb.WaltzDbBenchmark;
 
+
 public class DroolsBenchmarkExamplesApp extends JFrame {
 
     public static void main(String[] args) {
