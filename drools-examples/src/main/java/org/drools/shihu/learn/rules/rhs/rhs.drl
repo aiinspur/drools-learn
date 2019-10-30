@@ -1,0 +1,56 @@
+//created on: 2019-10-30
+package org.drools.shihu.learn.rules.rhs
+
+//list any import classes here.
+import org.drools.shihu.learn.rules.rhs.RhsExample.Message;
+
+
+
+//declare any global variables here
+
+
+
+
+rule "RHS Demo Rule"
+	dialect "mvel"
+    when
+        //conditions
+        m : Message( status == Message.HELLO, $myMessage : message );
+    then
+        //actions
+        
+        //System.out.println( $myMessage );
+        //m.setMessage( "Goodbyte cruel world");
+        //m.setStatus( Message.GOODBYE );
+        //update(m);
+        
+        m = new Message();
+        m.setMessage( "insert");
+        m.setStatus( Message.GOODBYE );
+        insert(m);
+        System.out.println( "insert success" );
+        return;
+        
+
+		    
+
+end
+
+rule "Good Bye"
+    dialect "java"
+    when
+        Message( status == Message.GOODBYE, message : message )
+    then
+        System.out.println( ":"+message + ">" + kcontext.toString());
+        System.out.println( "Rulename=" + kcontext.getRule().toString() );
+        
+end
+
+rule "Your Second Rule"
+    //include attributes such as "salience" here...
+    when
+        //conditions
+    then
+        //actions
+
+end

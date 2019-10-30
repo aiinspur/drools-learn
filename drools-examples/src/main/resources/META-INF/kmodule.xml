@@ -6,8 +6,19 @@
         <ksession name="HelloWorldKS"/>
     </kbase>
     
+    
+    
+    
+    <kbase name="attrKB" packages="org.drools.shihu.learn.rules.attribute">
+        <ksession name="attrKS"/>
+    </kbase>
+    
     <kbase name="lhsKB" packages="org.drools.shihu.learn.rules.lhs">
         <ksession name="lhs"/>
+    </kbase>
+    
+    <kbase name="rhsKB" packages="org.drools.shihu.learn.rules.rhs">
+        <ksession name="rhs"/>
     </kbase>
 
     <kbase name="FireKB" packages="org.drools.examples.fire.simple">

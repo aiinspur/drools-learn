@@ -16,10 +16,16 @@
 
 package org.drools.examples;
 
-import java.awt.*;
+import java.awt.Container;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 
-import javax.swing.*;
+import javax.swing.AbstractAction;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 import org.drools.examples.datadriventemplate.DataDrivenTemplateExample;
 import org.drools.examples.decisiontable.PricingRuleDTExample;
 import org.drools.examples.decisiontable.PricingRuleTemplateExample;

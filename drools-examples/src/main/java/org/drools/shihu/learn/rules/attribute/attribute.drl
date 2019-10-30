@@ -1,0 +1,58 @@
+//created on: 2019-10-30
+package org.drools.shihu.learn.rules.attribute
+
+//list any import classes here.
+import org.drools.shihu.learn.rules.attribute.AttrExample.Message;
+
+
+
+//declare any global variables here
+
+
+
+rule "duration test"
+	dialect "mvel"
+	duration 3000
+	
+	when
+	then
+		//System.out.println("thread id:" + Thread.currentThread().getId());
+		System.out.println("thread id:" );
+end
+
+
+/*
+rule "no-loop"
+	no-loop true
+	when
+		m: Message();
+	then
+		update(m);
+		System.out.println("no-loop test.");
+		
+end
+
+
+rule "Your First Rule"
+	dialect "java" 
+	salience "11"
+
+    when
+        //conditions
+    then
+        //actions
+        System.out.println("salience 11");
+
+end
+
+rule "Your Second Rule"
+    //include attributes such as "salience" here...
+    salience "2"
+    when
+        //conditions
+    then
+        //actions
+         System.out.println("salience 2");
+
+end
+*/
